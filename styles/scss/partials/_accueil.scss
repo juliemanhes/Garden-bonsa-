@@ -1,0 +1,97 @@
+section.discover {
+	position:relative;
+	img{
+		width:100%;
+	}
+	h2 {
+		position:absolute;
+		color:#fff;
+		left:40%;
+		bottom:50%;
+		z-index:2;
+	}
+}
+section.best-sales {
+	margin:4% 0;
+}
+div.best-sales-head {
+	border-bottom:2px solid #000;
+	h3 {
+		float:left;
+	}
+	img {
+		float:right;
+	}
+}
+
+div.best-sales-articles {
+	clear:both;
+	margin-top:2%;
+	div {
+		padding:1%;
+		-moz-box-shadow: 0px 1px 2px 0px #000;
+		-webkit-box-shadow: 0px 1px 2px 0px #000;
+		-o-box-shadow: 0px 1px 2px 0px #000;
+		box-shadow: 0px 1px 2px 0px #000;
+		width:32.6%;
+		margin-right:1%;
+		float:left;
+		&:last-child {
+			float:right;
+			margin:0;
+		}
+		img {
+			width:100%;
+			min-height:250px;
+		}
+	}
+}
+
+section.site-informations {
+	background:$section-background;
+	clear:both;
+	padding:3%;
+	width:100%;
+	display:flex;
+	margin-bottom:2%;
+	justify-content:space-between;
+	img {
+		width:80px;
+	}
+	h4 {
+		color:#fff;
+	}
+	div {
+		text-align:center;
+		margin-right:4%;		
+		width:50%;
+		p {
+		color:#fff;	
+		}
+	}
+}
+
+div.blog-head {
+	border-bottom:2px solid #000;
+	margin-bottom:2%;
+	h3 {
+		float:left;
+	}
+	img {
+		float:right;
+		width:1.5%;
+	}
+}
+
+div.blog-articles {
+	clear:both;
+	div {
+		width:49%;
+		float:left;
+		margin-right:1%;
+	}
+	img {
+		width:100%;
+	}
+}
+

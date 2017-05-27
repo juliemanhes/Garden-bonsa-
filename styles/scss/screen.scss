@@ -1,0 +1,15 @@
+$font-title:'Antic', sans-serif;;
+$font-text:'Lato', sans-serif;;
+
+$green:#84E296;
+$section-background:#3B413C;
+$footer-background:#251605;
+
+
+@import 'partials/reset.scss';
+@import 'partials/clearfix.scss';
+@import 'partials/common.scss';
+@import 'partials/header.scss';
+@import 'partials/accueil.scss';
+
+

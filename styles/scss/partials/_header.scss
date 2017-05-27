@@ -1,0 +1,21 @@
+header {
+	width:85%;
+	margin:30px auto;
+	.logo {
+		width:80%;
+	}
+	ul {
+		display:flex;
+		justify-content:space-between;
+		img {
+			width:15px;
+			margin-right:5px;
+		}
+	}
+	a {
+		font-family:$font-title;
+		color:#000;
+		text-transform:uppercase;
+	}
+	
+}

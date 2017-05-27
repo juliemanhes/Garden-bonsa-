@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+* {
+  font-family: "Lato", sans-serif; }
+
+main {
+  width: 85%;
+  margin: 0 auto; }
+
+ul li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+header {
+  width: 85%;
+  margin: 30px auto; }
+  header .logo {
+    width: 80%; }
+  header ul {
+    display: flex;
+    justify-content: space-between; }
+    header ul img {
+      width: 15px;
+      margin-right: 5px; }
+  header a {
+    font-family: "Antic", sans-serif;
+    color: #000;
+    text-transform: uppercase; }
+
+section.discover {
+  position: relative; }
+  section.discover img {
+    width: 100%; }
+  section.discover h2 {
+    position: absolute;
+    color: #fff;
+    left: 40%;
+    bottom: 50%;
+    z-index: 2; }
+
+section.best-sales {
+  margin: 4% 0; }
+
+div.best-sales-head {
+  border-bottom: 2px solid #000; }
+  div.best-sales-head h3 {
+    float: left; }
+  div.best-sales-head img {
+    float: right; }
+
+div.best-sales-articles {
+  clear: both;
+  margin-top: 2%; }
+  div.best-sales-articles div {
+    padding: 1%;
+    -moz-box-shadow: 0px 1px 2px 0px #000;
+    -webkit-box-shadow: 0px 1px 2px 0px #000;
+    -o-box-shadow: 0px 1px 2px 0px #000;
+    box-shadow: 0px 1px 2px 0px #000;
+    width: 32.6%;
+    margin-right: 1%;
+    float: left; }
+    div.best-sales-articles div:last-child {
+      float: right;
+      margin: 0; }
+    div.best-sales-articles div img {
+      width: 100%;
+      min-height: 250px; }
+
+section.site-informations {
+  background: #3B413C;
+  clear: both;
+  padding: 3%;
+  width: 100%;
+  display: flex;
+  margin-bottom: 2%;
+  justify-content: space-between; }
+  section.site-informations img {
+    width: 80px; }
+  section.site-informations h4 {
+    color: #fff; }
+  section.site-informations div {
+    text-align: center;
+    margin-right: 4%;
+    width: 50%; }
+    section.site-informations div p {
+      color: #fff; }
+
+div.blog-head {
+  border-bottom: 2px solid #000;
+  margin-bottom: 2%; }
+  div.blog-head h3 {
+    float: left; }
+  div.blog-head img {
+    float: right;
+    width: 1.5%; }
+
+div.blog-articles {
+  clear: both; }
+  div.blog-articles div {
+    width: 49%;
+    float: left;
+    margin-right: 1%; }
+  div.blog-articles img {
+    width: 100%; }
+
+/*# sourceMappingURL=screen.css.map */
