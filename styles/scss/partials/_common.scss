@@ -2,10 +2,22 @@
 	font-family:$font-text;	
 }
 
+<<<<<<< HEAD
 .inner {
+=======
+.container {
+>>>>>>> 8721a4e72f170f51d8ebf12200e86d2f0d4b1fb1
 	width:85%;
 	margin:0 auto;
 
+}
+.cta-container {
+	text-align:center;
+}
+.cta {
+	color:$green;
+	padding:1% 1%;
+	border:1px solid $green;
 }
 
 ul li {
@@ -19,3 +31,15 @@ a {
 img {
 	max-width:100%;
 }
+
+.more-container {
+	text-align:center;
+}
+
+.more {
+	text-transform:uppercase;
+	color:#000;
+	font-size:20px;
+	border-bottom:1px solid $green;
+}
+
