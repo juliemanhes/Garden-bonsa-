@@ -16,7 +16,7 @@
 * {
   font-family: "Lato", sans-serif; }
 
-main {
+.inner {
   width: 85%;
   margin: 0 auto; }
 
@@ -122,6 +122,7 @@ div.blog-articles {
   div.blog-articles img {
     width: 100%; }
 
+/************* FOOTER **************/
 footer {
   background-color: #251605;
   background-repeat: no-repeat;
@@ -188,5 +189,81 @@ footer {
     text-align: center;
     padding: 3% 0 0 0;
     font-size: 14px; }
+
+/********* LISTE DES PRODUITS ************/
+section.filtres ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  wrap: no-wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around; }
+  section.filtres ul li {
+    width: 35%;
+    text-align: center;
+    border: 2px solid #84E296;
+    padding: 10px;
+    margin: 10px 0 50px 0; }
+    section.filtres ul li a {
+      color: #84E296;
+      font-size: 18px; }
+    section.filtres ul li img {
+      width: 15%; }
+
+section.list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  section.list ul li {
+    width: 32%;
+    -webkit-box-shadow: 1px 1px 5px 1px #ccc;
+    box-shadow: 1px 1px 5px 1px #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px; }
+    section.list ul li h2 {
+      text-align: center;
+      font-size: 26px;
+      margin: 5px; }
+    section.list ul li span.category {
+      color: #3b413c;
+      font-style: italic;
+      font-size: 14px; }
+    section.list ul li span.price {
+      color: #67e253;
+      font-size: 40px; }
+    section.list ul li a.cta-more {
+      text-transform: uppercase;
+      color: #000;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      width: 30%;
+      margin: 10px auto;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #84E296; }
+      section.list ul li a.cta-more:hover {
+        border-bottom: 2px solid #000; }
+
+div.pagination {
+  border-top: 2px solid #000;
+  margin: 10px auto; }
+  div.pagination a {
+    color: #84E296;
+    font-size: 18px;
+    border: 1px solid #84E296;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    float: right; }
+    div.pagination a:hover {
+      color: #fff;
+      background-color: #84E296; }
 
 /*# sourceMappingURL=screen.css.map */

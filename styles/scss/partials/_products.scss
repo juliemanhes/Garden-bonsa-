@@ -1,0 +1,106 @@
+/********* LISTE DES PRODUITS ************/
+
+section.filtres {
+	ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		wrap: no-wrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-around;
+
+		li {
+
+			width: 35%;
+			text-align: center;
+			border: 2px solid $green;
+			padding: 10px;
+			margin: 10px 0 50px 0;
+
+			a {
+				color: $green;
+				font-size: 18px;
+			}
+
+			img {
+				width: 15%;
+			}
+		}
+	}
+}
+
+section.list {
+	ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+
+		li {
+			width: 32%;
+			-webkit-box-shadow: 1px 1px 5px 1px #ccc;
+			box-shadow: 1px 1px 5px 1px #ccc;
+			margin-bottom: 15px;
+			padding: 10px;
+			font-size: 16px;
+
+			h2 {
+				text-align: center;
+				font-size: 26px;
+				margin: 5px;
+			}
+
+			span.category {
+				color: $grey;
+				font-style: italic;
+				font-size: 14px;
+			}
+
+			span.price {
+				color: #67e253;
+				font-size: 40px;
+			}
+
+			a.cta-more {
+				text-transform: uppercase;
+				color: #000;
+				font-weight: bold;
+				display: block;
+				text-align: center;
+				width: 30%;
+				margin: 10px auto;
+				padding-bottom: 5px;
+				border-bottom: 2px solid $green;
+
+				&:hover {
+					border-bottom: 2px solid #000;
+				}
+			}
+		}	
+	}
+}
+
+div.pagination {
+	border-top: 2px solid #000;
+	margin: 10px auto;
+
+	a {
+		color: $green;
+		font-size: 18px;
+		border: 1px solid $green;
+		padding: 10px 15px;
+		display: inline-block;
+		margin-top: 10px;
+		float: right;
+
+		&:hover {
+			color: #fff;
+			background-color: $green;
+		}
+	}
+}
