@@ -166,4 +166,71 @@ div.blog-articles {
     width: 100%;
     margin-bottom: 3%; }
 
+footer {
+  background-color: #251605;
+  background-repeat: no-repeat;
+  background-position: right top;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff;
+  padding: 2% 3% 0.5% 3%;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-size: 18px; }
+  footer:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.4;
+    background-image: url(../../img-layout/bonsai.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    -ms-background-size: cover;
+    background-size: contain; }
+  footer div.col-footer {
+    width: auto;
+    z-index: 999; }
+    footer div.col-footer h2 {
+      font-family: "Antic", sans-serif;
+      font-weight: normal;
+      font-size: 26px; }
+    footer div.col-footer h3 {
+      font-size: 20px;
+      display: inline-block;
+      margin-bottom: 30px; }
+    footer div.col-footer img.icon {
+      display: inline;
+      margin-right: 2px;
+      color: #84E296;
+      width: 25px;
+      height: 25px; }
+    footer div.col-footer a {
+      color: #fff; }
+      footer div.col-footer a:hover {
+        text-decoration: underline; }
+    footer div.col-footer p, footer div.col-footer li {
+      padding: 5px 0 0 20px; }
+    footer div.col-footer.social li {
+      display: inline-block;
+      padding: 5px; }
+      footer div.col-footer.social li img {
+        width: 50px; }
+  footer p.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 3% 0 0 0;
+    font-size: 14px; }
+
 /*# sourceMappingURL=screen.css.map */
