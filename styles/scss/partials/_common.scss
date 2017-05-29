@@ -2,10 +2,18 @@
 	font-family:$font-text;	
 }
 
-main {
+.container {
 	width:85%;
 	margin:0 auto;
 
+}
+.cta-container {
+	text-align:center;
+}
+.cta {
+	color:$green;
+	padding:1% 1%;
+	border:1px solid $green;
 }
 
 ul li {
@@ -19,3 +27,15 @@ a {
 img {
 	max-width:100%;
 }
+
+.more-container {
+	text-align:center;
+}
+
+.more {
+	text-transform:uppercase;
+	color:#000;
+	font-size:20px;
+	border-bottom:1px solid $green;
+}
+
