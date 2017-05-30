@@ -5,26 +5,37 @@ section.filtres {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		wrap: no-wrap;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-around;
+		-ms-flex-wrap: no-wrap;
+		flex-wrap: no-wrap;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 
 		li {
 
-			width: 35%;
+			width: 30%;
 			text-align: center;
 			border: 2px solid $green;
 			padding: 10px;
-			margin: 10px 0 50px 0;
+			margin: 10px 10px 50px 10px;
 
 			a {
 				color: $green;
 				font-size: 18px;
-			}
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-ms-flex-pack: distribute;
+				justify-content: space-around;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
 
-			img {
-				width: 15%;
+				img {
+					width: 15%;
+				}
 			}
 		}
 	}
@@ -48,17 +59,38 @@ section.list {
 			margin-bottom: 15px;
 			padding: 10px;
 			font-size: 16px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: flex-start;
+
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
 
 			h2 {
 				text-align: center;
 				font-size: 26px;
 				margin: 5px;
+				width: 100%;
 			}
 
 			span.category {
 				color: $grey;
 				font-style: italic;
 				font-size: 14px;
+				-ms-flex-item-align: center;
+				-ms-grid-row-align: center;
+				align-self: center;
 			}
 
 			span.price {
@@ -104,3 +136,6 @@ div.pagination {
 		}
 	}
 }
+
+
+/*@media screen and (min-width: 200px) and (max-width: 640px) {*/
