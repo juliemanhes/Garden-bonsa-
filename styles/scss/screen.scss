@@ -3,6 +3,7 @@ $font-text:'Lato', sans-serif;
 
 $green:#84E296;
 $grey: #3b413c;
+$brown: #251605;
 $cta:#67e253;
 $section-bg:#3B413C;
 $footer-bg:#251605;
@@ -18,6 +19,7 @@ $max-tab:750px;
 @import 'partials/accueil.scss';
 @import 'partials/footer.scss';
 @import 'partials/products.scss';
+@import 'partials/panier.scss';
 
 
 

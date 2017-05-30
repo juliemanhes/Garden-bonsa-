@@ -1,0 +1,160 @@
+/************* PANIER ***************/
+
+nav.panier-steps {
+	border-top: 2px solid $brown;
+
+	ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: no-wrap;
+		flex-wrap: no-wrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		margin-bottom: 30px;
+
+		li {
+			padding-top: 10px;
+		}
+
+		li:first-child {
+			border-top: 2px solid $green;
+		}
+
+		li {
+
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			
+			color: #000;
+			font-size: 16px;
+
+			@media screen and (max-width: 750px) {
+				font-size: 10px;
+			}
+
+			span{
+
+				&.number {
+				font-size: 20px;
+
+					@media screen and (max-width: 750px) {
+						font-size: 16px;
+					}
+				}
+
+				&.active {
+					color: $green;
+					font-style: italic;
+				}
+			}
+		}
+	}
+}
+
+/*** STEP 1 ***/
+
+section.panier-produits{
+
+	margin-bottom: 30px;
+
+	ul {
+		
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: no-wrap;
+		flex-wrap: no-wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		li {
+			margin: 10px 0;
+			-webkit-box-shadow: 1px 1px 5px 1px #ccc;
+			box-shadow: 1px 1px 5px 1px #ccc;
+			padding: 10px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+
+			a:first-child {
+				width: 15%;
+
+				@media screen and (max-width: 750px) {
+					width: 100%;
+				}
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+
+				&.delete {
+					width: 20px;
+					cursor: pointer;
+					margin: 10px auto;
+				}
+			}
+
+			h3 {
+				@media screen and (max-width: 750px) {
+					text-align: center;
+					margin: auto;
+				}
+
+				a {
+					font-size: 26px;
+					color: #000;					
+				}
+			}
+
+			span.price {
+				@media screen and (max-width: 750px) {
+					margin: auto;
+				}
+			}
+
+			select {
+				width: 50px;
+
+				@media screen and (max-width: 750px) {
+					width: 25%;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	div.total {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;	
+	}
+}

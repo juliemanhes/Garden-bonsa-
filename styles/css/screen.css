@@ -62,6 +62,10 @@ img {
 .hidden {
   display: none; }
 
+.price {
+  color: #67e253;
+  font-size: 40px; }
+
 header {
   position: relative; }
   header .logo {
@@ -504,9 +508,6 @@ section.list ul {
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center; }
-    section.list ul li span.price {
-      color: #67e253;
-      font-size: 40px; }
     section.list ul li a.cta-more {
       text-transform: uppercase;
       color: #000;
@@ -536,5 +537,116 @@ div.pagination {
       background-color: #84E296; }
 
 /*@media screen and (min-width: 200px) and (max-width: 640px) {*/
+/************* PANIER ***************/
+nav.panier-steps {
+  border-top: 2px solid #251605; }
+  nav.panier-steps ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    nav.panier-steps ul li {
+      padding-top: 10px; }
+    nav.panier-steps ul li:first-child {
+      border-top: 2px solid #84E296; }
+    nav.panier-steps ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #000;
+      font-size: 16px; }
+      @media screen and (max-width: 750px) {
+        nav.panier-steps ul li {
+          font-size: 10px; } }
+      nav.panier-steps ul li span.number {
+        font-size: 20px; }
+        @media screen and (max-width: 750px) {
+          nav.panier-steps ul li span.number {
+            font-size: 16px; } }
+      nav.panier-steps ul li span.active {
+        color: #84E296;
+        font-style: italic; }
+
+/*** STEP 1 ***/
+section.panier-produits {
+  margin-bottom: 30px; }
+  section.panier-produits ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    section.panier-produits ul li {
+      margin: 10px 0;
+      -webkit-box-shadow: 1px 1px 5px 1px #ccc;
+      box-shadow: 1px 1px 5px 1px #ccc;
+      padding: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      section.panier-produits ul li a:first-child {
+        width: 15%; }
+        @media screen and (max-width: 750px) {
+          section.panier-produits ul li a:first-child {
+            width: 100%; } }
+      section.panier-produits ul li img {
+        width: 100%;
+        height: auto; }
+        section.panier-produits ul li img.delete {
+          width: 20px;
+          cursor: pointer;
+          margin: 10px auto; }
+      @media screen and (max-width: 750px) {
+        section.panier-produits ul li h3 {
+          text-align: center;
+          margin: auto; } }
+      section.panier-produits ul li h3 a {
+        font-size: 26px;
+        color: #000; }
+      @media screen and (max-width: 750px) {
+        section.panier-produits ul li span.price {
+          margin: auto; } }
+      section.panier-produits ul li select {
+        width: 50px; }
+        @media screen and (max-width: 750px) {
+          section.panier-produits ul li select {
+            width: 25%;
+            margin: auto; } }
+  section.panier-produits div.total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
 
 /*# sourceMappingURL=screen.css.map */
