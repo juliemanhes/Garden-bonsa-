@@ -384,7 +384,7 @@ footer {
     margin-bottom: 50px;
     position: relative;
     background-color: #84E296; }
-    section.filtres.hidden {
+    section.filtres.hidden-filters {
       height: 35px; } }
 section.filtres ul {
   display: -webkit-box;
@@ -396,7 +396,7 @@ section.filtres ul {
   -ms-flex-pack: center;
   justify-content: center; }
   @media screen and (max-width: 750px) {
-    section.filtres ul.hidden {
+    section.filtres ul.hidden-filters {
       display: none; } }
   section.filtres ul li {
     width: 30%;
@@ -454,7 +454,7 @@ section.filtres div.mobile-more {
         top: 30px;
         left: 50%;
         margin-left: -15px; }
-        section.filtres div.mobile-more img.hidden {
+        section.filtres div.mobile-more img.hidden-filters {
           -webkit-transform: rotate(180deg);
           transform: rotate(180deg); } }
 
