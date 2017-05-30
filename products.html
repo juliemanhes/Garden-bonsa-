@@ -27,6 +27,7 @@
 		<li><a href="#"><img src="img-layout/home.svg" alt=""> Bonsaïs d'intérieur</a></li>
 		<li><a href="#"><img src="img-layout/tree.svg" alt=""> Bonsaïs d'extérieur</a></li>
 	</ul>
+	<div class="mobile-more"><img src="img-layout/down.svg" alt="" class="hidden"></div>
 </section>
 <!-- Fin filtres -->
 
@@ -122,4 +123,44 @@
 	<p class="copyright">Copyright 2017 - Bonsaï Garden - Tous droits réservés</p>
 </footer>
 </body>
+<script type="text/javascript">
+
+// changement icones de filtre en taille tablette
+	var filtre_icon = document.querySelectorAll('section.filtres img');
+
+		if (window.innerWidth < 751) {
+		filtre_icon[0].setAttribute('src', 'img-layout/home-white.svg');
+		filtre_icon[1].setAttribute('src', 'img-layout/tree-white.svg');
+		}
+		else {
+			filtre_icon[0].setAttribute('src', 'img-layout/home.svg');
+			filtre_icon[1].setAttribute('src', 'img-layout/tree.svg');
+		}
+
+	window.addEventListener('resize', function(){
+		if (window.innerWidth < 751) {
+		filtre_icon[0].setAttribute('src', 'img-layout/home-white.svg');
+		filtre_icon[1].setAttribute('src', 'img-layout/tree-white.svg');
+		}
+		else {
+			filtre_icon[0].setAttribute('src', 'img-layout/home.svg');
+			filtre_icon[1].setAttribute('src', 'img-layout/tree.svg');
+		}
+	});
+
+// toggle des filtres
+
+var filtres = document.querySelector('section.filtres');
+var ul = document.querySelector('section.filtres ul');
+var click = document.querySelector('div.mobile-more');
+var arrow = document.querySelector('div.mobile-more img');
+
+click.addEventListener('click', function() {
+	filtres.classList.toggle('hidden');
+	ul.classList.toggle('hidden');
+	arrow.classList.toggle('hidden');
+});
+
+
+</script>
 </html>
