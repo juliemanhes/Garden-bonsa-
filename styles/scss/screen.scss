@@ -1,10 +1,10 @@
-$font-title:'Antic', sans-serif;;
-$font-text:'Lato', sans-serif;;
+$font-title:'Antic', sans-serif;
+$font-text:'Lato', sans-serif;
 
 $green:#84E296;
 $cta:#67e253;
-$section-background:#3B413C;
-$footer-background:#251605;
+$section-bg:#3B413C;
+$footer-bg:#251605;
 
 $max-mob:450px;
 $max-tab:750px;
@@ -15,5 +15,6 @@ $max-tab:750px;
 @import 'partials/common.scss';
 @import 'partials/header.scss';
 @import 'partials/accueil.scss';
+@import 'partials/footer.scss';
 
 
