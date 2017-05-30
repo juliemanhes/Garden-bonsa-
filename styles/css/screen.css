@@ -16,12 +16,14 @@
 * {
   font-family: "Lato", sans-serif; }
 
-.inner .container {
+.container {
   width: 85%;
   margin: 0 auto; }
-.inner .cta-container {
+
+.cta-container {
   text-align: center; }
-.inner .cta {
+
+.cta {
   color: #84E296;
   padding: 1% 1%;
   border: 1px solid #84E296; }

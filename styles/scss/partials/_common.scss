@@ -2,19 +2,18 @@
 	font-family:$font-text;	
 }
 
-.inner {
-	.container {
-		width:85%;
-		margin:0 auto;
-	}
-	.cta-container {
-		text-align:center;
-	}
-	.cta {
-		color:$green;
-		padding:1% 1%;
-		border:1px solid $green;
-	}
+.container {
+	width:85%;
+	margin:0 auto;
+}
+.cta-container {
+	text-align:center;
+}
+
+.cta {
+	color:$green;
+	padding:1% 1%;
+	border:1px solid $green;
 }
 
 ul li {
