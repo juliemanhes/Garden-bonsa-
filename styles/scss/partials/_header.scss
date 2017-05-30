@@ -1,21 +1,70 @@
 header {
-	width:85%;
-	margin:30px auto;
-	.logo {
-		width:80%;
-	}
-	ul {
-		display:flex;
-		justify-content:space-between;
-		img {
-			width:15px;
-			margin-right:5px;
-		}
-	}
-	a {
-		font-family:$font-title;
-		color:#000;
-		text-transform:uppercase;
-	}
-	
+    position: relative;
+    .logo {
+        width: 80%;
+    }
+    nav {
+        width: 85%;
+        margin: 30px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 80%;
+            @media only screen and (max-width: $max-tab) {
+                display: none;
+            }
+            img {
+                width: 15px;
+                margin-right: 5px;
+            }
+        }
+    }
+    a {
+        font-family: $font-title;
+        color: #000;
+        text-transform: uppercase;
+    }
+    .burger {
+        .cross {
+            width: 7%;
+            float: right;
+        }
+        @media only screen and (min-width: $max-tab) {
+            display: none;
+        }
+        @media only screen and (max-width: $max-tab) {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+        }
+    }
+    .burger-menu {
+        @media only screen and (min-width: $max-tab) {
+            display: none;
+        }
+        position:absolute;
+        z-index:3;
+        height:30vh;
+        border-bottom:1px solid #000;
+        top:100%;
+        background:#fff;
+        width:100%;
+        li {
+            margin-left: 60%;
+            margin-top: 3%;
+        }
+    }
 }
