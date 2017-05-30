@@ -2,6 +2,7 @@ $font-title:'Antic', sans-serif;
 $font-text:'Lato', sans-serif;
 
 $green:#84E296;
+$grey: #3b413c;
 $cta:#67e253;
 $section-bg:#3B413C;
 $footer-bg:#251605;
@@ -16,5 +17,7 @@ $max-tab:750px;
 @import 'partials/header.scss';
 @import 'partials/accueil.scss';
 @import 'partials/footer.scss';
+@import 'partials/products.scss';
+
 
 
