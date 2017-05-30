@@ -14,7 +14,7 @@
 .clearfix:after {
   clear: both; }
 
-/**** CLASSES ET ÉLÉMENTS COMMUNS ****/
+/**** CLASSES ET ├ëL├ëMENTS COMMUNS ****/
 * {
   font-family: "Lato", sans-serif; }
 
@@ -450,6 +450,7 @@ section.filtres div.mobile-more {
       section.filtres div.mobile-more img {
         position: absolute;
         width: 30px;
+        height: 30px;
         top: 30px;
         left: 50%;
         margin-left: -15px; }
