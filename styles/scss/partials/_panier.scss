@@ -22,7 +22,7 @@ nav.panier-steps {
 			padding-top: 10px;
 		}
 
-		li:first-child {
+		li.current {
 			border-top: 2px solid $green;
 		}
 
@@ -36,9 +36,9 @@ nav.panier-steps {
 			-webkit-box-pack: center;
 			-ms-flex-pack: center;
 			justify-content: center;
+			-ms-flex-direction: column;
 			-webkit-box-orient: vertical;
 			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
 			-webkit-box-align: center;
 			-ms-flex-align: center;
@@ -104,6 +104,11 @@ section.panier-produits{
 			-webkit-box-pack: justify;
 			-ms-flex-pack: justify;
 			justify-content: space-between;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: row;
+			flex-direction: row;
+
 
 			a:first-child {
 				width: 15%;
@@ -120,14 +125,18 @@ section.panier-produits{
 				&.delete {
 					width: 20px;
 					cursor: pointer;
-					margin: 10px auto;
+
+					@media screen and (max-width: 750px) {
+						margin: 15px auto;
+					}
 				}
 			}
 
 			h3 {
+
 				@media screen and (max-width: 750px) {
 					text-align: center;
-					margin: auto;
+					width: 60%;
 				}
 
 				a {
@@ -138,7 +147,8 @@ section.panier-produits{
 
 			span.price {
 				@media screen and (max-width: 750px) {
-					margin: auto;
+					width: 40%;
+					text-align: center;
 				}
 			}
 
@@ -159,6 +169,15 @@ section.panier-produits{
 		display: flex;
 		-webkit-box-pack: end;
 		-ms-flex-pack: end;
-		justify-content: flex-end;	
+		justify-content: flex-end;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;	
+		-webkit-box-align: end;	
+		-ms-flex-align: end;	
+		align-items: flex-end;
 	}
 }
+
+/******** STEP 2 *****/
