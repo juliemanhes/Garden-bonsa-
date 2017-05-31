@@ -626,6 +626,10 @@ section.product-details-icons {
   @media only screen and (max-width: 750px) {
     .paiement-choice {
       margin-top: 4%; } }
+  .paiement-choice .paiement-card {
+    background: #84E296; }
+    .paiement-choice .paiement-card p {
+      color: #fff; }
   .paiement-choice div {
     margin: 3% 1% 0;
     padding: 1%;

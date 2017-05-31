@@ -24,6 +24,13 @@
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
+
+	.paiement-card {
+		background:$green;
+		p {
+			color:#fff;
+		}
+	}
 	div {
 		margin:3% 1% 0;
 		padding:1%;
