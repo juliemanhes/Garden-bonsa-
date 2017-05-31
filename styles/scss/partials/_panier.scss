@@ -3,6 +3,10 @@
 nav.panier-steps {
 	border-top: 2px solid $brown;
 
+	a {
+		color:#000;
+	}
+
 	ul {
 		display: -webkit-box;
 		display: -ms-flexbox;
