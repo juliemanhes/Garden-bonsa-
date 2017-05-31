@@ -11,24 +11,51 @@
 <body>
 
 <header>
-	<nav>
-		<ul>
-			<li><h1><a href="index.html" title=""><img src="img-layout/logo.png" class="logo"></a></h1></li>
-			<li><img src="img-layout/tree-nav.svg"><a href="">Nos bonsaïs</a></li>
-			<li><a href=""><img src="img-layout/file-document.svg">Blog</a></li>
-			<li><a href=""><img src="img-layout/account.svg">Mon Compte</a></li>
-			<li><a href=""><img src="img-layout/pine-tree-box.svg">Panier</a></li>
-		</ul>
-	</nav>
-</header>
-<!-- Fin header -->
+        <nav>
+            <h1><a href="index.html" title=""><img src="img-layout/logo.png" alt='logo'class="logo"></a></h1>
+            <ul>
+
+                <li><img src="img-layout/tree-nav.svg" alt=""><a href="products.html">Nos bonsaïs</a></li>
+                <li>
+                    <a href=""><img src="img-layout/file-document.svg" alt="">Blog</a>
+                </li>
+                <li>
+                    <a href=""><img src="img-layout/account.svg" alt="">Mon Compte</a>
+                </li>
+                <li>
+                    <a href="panier-step1.html"><img src="img-layout/pine-tree-box.svg" alt="">Panier</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <img src="img-layout/burger.png" class="burger-icon" alt="">
+            <img src="img-layout/clear.svg" class="cross hidden" alt="">
+        </div>
+        <div class="burger-menu hidden">
+            <ul>
+                <li><img src="img-layout/tree-nav.svg" alt=""><a href="">Nos bonsaïs</a></li>
+                <li>
+                    <a href=""><img src="img-layout/file-document.svg" alt="">Blog</a>
+                </li>
+                <li>
+                    <a href=""><img src="img-layout/account.svg" alt="">Mon Compte</a>
+                </li>
+                <li>
+                    <a href=""><img src="img-layout/pine-tree-box.svg" alt=''>Panier</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Fin header -->
+
 
 <section class="filtres container">
 	<ul class="container">
 		<li><a href="#"><img src="img-layout/home.svg" alt=""> Bonsaïs d'intérieur</a></li>
 		<li><a href="#"><img src="img-layout/tree.svg" alt=""> Bonsaïs d'extérieur</a></li>
 	</ul>
-	<div class="mobile-more"><img src="img-layout/down.svg" alt="" class="hidden"></div>
+	<div class="mobile-more"><img src="img-layout/down.svg" alt="" class="hidden-filters"></div>
 </section>
 <!-- Fin filtres -->
 
@@ -124,6 +151,7 @@
 	<p class="copyright">Copyright 2017 - Bonsaï Garden - Tous droits réservés</p>
 </footer>
 </body>
+<script src="js/burger.js"></script>
 <script type="text/javascript">
 
 // changement icones de filtre en taille tablette
@@ -157,9 +185,9 @@ var click = document.querySelector('div.mobile-more');
 var arrow = document.querySelector('div.mobile-more img');
 
 click.addEventListener('click', function() {
-	filtres.classList.toggle('hidden');
-	ul.classList.toggle('hidden');
-	arrow.classList.toggle('hidden');
+	filtres.classList.toggle('hidden-filters');
+	ul.classList.toggle('hidden-filters');
+	arrow.classList.toggle('hidden-filters');
 });
 
 
