@@ -154,4 +154,34 @@
     </footer>
 </body>
 <script src="js/burger.js"></script>
+<script>
+var card = document.querySelector('.paiement-card img');
+var paypal = document.querySelector('.paiement-paypal img');
+var divCard = document.querySelector('.paiement-card');
+var divPaypal = document.querySelector('.paiement-paypal');
+var textCard = document.querySelector('.paiement-card p');
+var textPaypal = document.querySelector('.paiement-paypal p');
+
+card.addEventListener('click', function() {
+    divCard.style.background = '#84E296';
+    card.setAttribute('src', 'img-layout/credit-card.png');
+    textCard.style.color = '#fff';
+    divPaypal.style.background = '#fff';
+    paypal.setAttribute('src', 'img-layout/paypal.png');
+    textPaypal.style.color = '#84E296';
+
+});
+
+paypal.addEventListener('click', function() {
+    divPaypal.style.background = '#84E296';
+    paypal.setAttribute('src', 'img-layout/paypal-white.png');
+    textPaypal.style.color = '#fff';
+    divCard.style.background = '#fff';
+    card.setAttribute('src', 'img-layout/credit-card-green.png');
+    textCard.style.color = '#84E296';
+
+});
+
+</script>
+
 </html>
