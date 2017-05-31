@@ -552,7 +552,7 @@ nav.panier-steps {
     margin-bottom: 30px; }
     nav.panier-steps ul li {
       padding-top: 10px; }
-    nav.panier-steps ul li:first-child {
+    nav.panier-steps ul li.current {
       border-top: 2px solid #84E296; }
     nav.panier-steps ul li {
       display: -webkit-box;
@@ -563,9 +563,9 @@ nav.panier-steps {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      -ms-flex-direction: column;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      -ms-flex-direction: column;
       flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
@@ -612,7 +612,11 @@ section.panier-produits {
       align-items: center;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
       section.panier-produits ul li a:first-child {
         width: 15%; }
         @media screen and (max-width: 750px) {
@@ -623,18 +627,21 @@ section.panier-produits {
         height: auto; }
         section.panier-produits ul li img.delete {
           width: 20px;
-          cursor: pointer;
-          margin: 10px auto; }
+          cursor: pointer; }
+          @media screen and (max-width: 750px) {
+            section.panier-produits ul li img.delete {
+              margin: 15px auto; } }
       @media screen and (max-width: 750px) {
         section.panier-produits ul li h3 {
           text-align: center;
-          margin: auto; } }
+          width: 60%; } }
       section.panier-produits ul li h3 a {
         font-size: 26px;
         color: #000; }
       @media screen and (max-width: 750px) {
         section.panier-produits ul li span.price {
-          margin: auto; } }
+          width: 40%;
+          text-align: center; } }
       section.panier-produits ul li select {
         width: 50px; }
         @media screen and (max-width: 750px) {
@@ -647,6 +654,13 @@ section.panier-produits {
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
 
 /*# sourceMappingURL=screen.css.map */
