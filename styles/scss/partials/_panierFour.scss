@@ -60,18 +60,16 @@ section.panier-recap {
 	}
 }
 
-.product-recap-infos {
-	span {
-		float:right;
-	}
+.total {
+	float:right;
 }
 
 .panier-recap {
 	clear:both;
 	.cta-container {
-		margin-top:5%;
+		clear:both;
 		@media only screen and (max-width: $max-mob) {
-    margin-top:10%;
+    	margin-top:25%;
 }
 	}
 	.cta {
@@ -130,5 +128,6 @@ section.panier-recap-pay {
 		padding:1% 5%;
 	}
 }
+
 
 
