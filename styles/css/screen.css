@@ -723,16 +723,16 @@ section.panier-recap {
     clear: both;
     margin-top: 5%; }
 
-.product-recap-infos span {
-  float: right; }
+.total {
+  text-align: right; }
 
 .panier-recap {
   clear: both; }
   .panier-recap .cta-container {
-    margin-top: 5%; }
+    clear: both; }
     @media only screen and (max-width: 450px) {
       .panier-recap .cta-container {
-        margin-top: 10%; } }
+        margin-top: 25%; } }
   .panier-recap .cta {
     padding: 1% 5%; }
 
