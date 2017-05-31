@@ -1,0 +1,79 @@
+.panier-infos-paiement {
+	margin:5% auto;
+}
+.panier-infos-paiement-head {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	border-bottom:2px solid #000;
+	img {
+		margin-bottom:1%;
+	}
+	h4 {
+		font-size:30px;
+	}
+}
+
+.paiement-choice {
+	@media only screen and (max-width: $max-tab) {
+    margin-top:4%;
+    	}
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	div {
+		margin:3% 1% 0;
+		padding:1%;
+		width:50%;
+		border:1px solid $green;
+		text-align:center;
+		p {
+			color:$green;
+			margin-top:2%;
+		}
+	}
+}
+
+.paiement-card-choice {
+	margin-top:3%;
+	@media only screen and (max-width: $max-tab) {
+    margin-top:10%;
+    	}
+	input {
+		margin-right:3%;
+	}
+}
+
+.panier-paiement-input {
+	margin-top:3%;
+	@media only screen and (max-width: $max-tab) {
+    margin-top:10%;
+    	}
+	label {
+		display:block;
+		margin-top:2%;
+	}
+	input {
+		margin-top:1%;
+		border-radius:5px 5px;
+		height:20px;
+		border:1px solid #000;
+	}
+	input#numero {
+		width:40%;
+		@media only screen and (max-width: $max-tab) {
+    	width:70%;
+    	}
+	}
+
+	input#name {
+		width:25%;
+		@media only screen and (max-width: $max-tab) {
+    	width:60%;
+    	}
+	}
+
+}

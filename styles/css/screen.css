@@ -539,6 +539,71 @@ div.pagination {
       background-color: #84E296; }
 
 /*@media screen and (min-width: 200px) and (max-width: 640px) {*/
+.panier-infos-paiement {
+  margin: 5% auto; }
+
+.panier-infos-paiement-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 2px solid #000; }
+  .panier-infos-paiement-head img {
+    margin-bottom: 1%; }
+  .panier-infos-paiement-head h4  {
+    font-size: 30px; }
+
+.paiement-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media only screen and (max-width: 750px) {
+    .paiement-choice {
+      margin-top: 4%; } }
+  .paiement-choice div {
+    margin: 3% 1% 0;
+    padding: 1%;
+    width: 50%;
+    border: 1px solid #84E296;
+    text-align: center; }
+    .paiement-choice div p {
+      color: #84E296;
+      margin-top: 2%; }
+
+.paiement-card-choice {
+  margin-top: 3%; }
+  @media only screen and (max-width: 750px) {
+    .paiement-card-choice {
+      margin-top: 10%; } }
+  .paiement-card-choice input {
+    margin-right: 3%; }
+
+.panier-paiement-input {
+  margin-top: 3%; }
+  @media only screen and (max-width: 750px) {
+    .panier-paiement-input {
+      margin-top: 10%; } }
+  .panier-paiement-input label {
+    display: block;
+    margin-top: 2%; }
+  .panier-paiement-input input {
+    margin-top: 1%;
+    border-radius: 5px 5px;
+    height: 20px;
+    border: 1px solid #000; }
+  .panier-paiement-input input#numero {
+    width: 40%; }
+    @media only screen and (max-width: 750px) {
+      .panier-paiement-input input#numero {
+        width: 70%; } }
+  .panier-paiement-input input#name {
+    width: 25%; }
+    @media only screen and (max-width: 750px) {
+      .panier-paiement-input input#name {
+        width: 60%; } }
+
 .panier-recap-head,
 .panier-livraison-head,
 .panier-pay-head {
@@ -550,13 +615,17 @@ div.pagination {
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-bottom: 2px solid #000; }
+  .panier-recap-head h4 ,
+  .panier-livraison-head h4 ,
+  .panier-pay-head h4  {
+    font-size: 24px; }
   .panier-recap-head img,
   .panier-livraison-head img,
   .panier-pay-head img {
     margin-bottom: 1%; }
 
 section.panier-recap {
-  margin-bottom: 5%; }
+  margin: 5% auto; }
   @media only screen and (max-width: 450px) {
     section.panier-recap {
       margin-bottom: 10%; } }

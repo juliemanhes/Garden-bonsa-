@@ -9,6 +9,9 @@
 	-ms-flex-pack:justify;
 	justify-content:space-between;
 	border-bottom:2px solid #000;
+	h4 {
+		font-size:24px;
+	}
 	img {
 		margin-bottom:1%;
 	}
@@ -16,7 +19,7 @@
 
 	
 section.panier-recap {
-	margin-bottom:5%;
+	margin:5% auto;
 	@media only screen and (max-width: $max-mob) {
     margin-bottom:10%;
     }

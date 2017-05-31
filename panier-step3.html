@@ -50,8 +50,67 @@
         </div>
     </header>
     <!-- Fin header -->
+    <nav class="panier-steps container">
+    <ul>
+        <li><a href="#"><span>1.</span> <span>Récapitulatif</span></a></li>
+        <li><a href="#"><span>2.</span> <span>Informations de livraison</span></a></li>
+        <li class="current"><a href="#"><span class="active">3.</span> <span class="active">Informations de paiement</span></a></li>
+        <li><a href="#"><span>4.</span> <span>Validation</span></a></li>
+    </ul>
+</nav>
+<!-- Fin navigation par étapes -->
 
+<section class="panier-infos-paiement container">
+    <div class="panier-infos-paiement-head">
+        <h4>Informations de paiement</h4>
+        <img src="img-layout/card.png" alt="">
+    </div>
+
+    <div class="paiement-choice">
+        <div class="paiement-card">
+            <img src="img-layout/credit-card-green.png" alt="">
+            <p>Carte de crédit</p>
+    </div>
+    <div class="paiement-paypal">
+        <img src="img-layout/paypal.png" alt="">
+        <p>Paypal</p>
+    </div>
+    </div>
     
+    <div class="paiement-card-choice">
+        <img src="img-layout/visa.png" alt="">
+        <input type="checkbox">
+        <img src="img-layout/mastercard.png" alt="">
+        <input type="checkbox">
+    </div>
+    <div class="panier-paiement-input">
+        <p>
+            <label for="numero">Numéro de carte</label>
+            <input type="text" id="numero">
+        </p>
+        <p>
+            <label for="expire">Expire le</label>
+            <select id="expire">
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+            </select>
+        </p>
+         <p>
+            <label for="crypto">Cryptogramme visuel</label>
+            <input type="text" id="crypto">
+        </p>
+           <p>
+            <label for="name">Nom du titulaire</label>
+            <input type="text" id="name">
+        </p>        
+    </div>
+</section>
+<!-- Fin section paiement du panier -->
+
+<div class="pagination container clearfix">
+    <a href="panier-step4.html">Suivant</a>
+</div>  
 
      <footer>
         <div class="col-footer">
