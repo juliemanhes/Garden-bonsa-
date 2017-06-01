@@ -934,6 +934,13 @@ section.login {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 80px auto; }
+  @media screen and (max-width: 750px) {
+    section.login {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: 10px auto; } }
   section.login div {
     background-color: #84E296;
     color: #fff;
@@ -946,12 +953,19 @@ section.login {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    @media screen and (max-width: 750px) {
+      section.login div {
+        width: 100%;
+        margin-bottom: 50px; } }
     section.login div h4 {
       font-size: 20px;
       text-align: center;
       margin-bottom: 20px; }
     section.login div input {
       margin-bottom: 20px; }
+      @media screen and (max-width: 750px) {
+        section.login div input {
+          height: 25px; } }
     section.login div button {
       width: 200px;
       border: 1px solid #fff;
