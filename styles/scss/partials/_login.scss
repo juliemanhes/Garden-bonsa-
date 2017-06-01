@@ -8,6 +8,14 @@ section.login {
 	justify-content: space-around;
 	margin: 80px auto;
 
+	@media screen and (max-width: 750px) {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		margin: 10px auto;
+	}
+
 	div {
 		background-color: $green;
 		color: #fff;
@@ -21,6 +29,11 @@ section.login {
 		-ms-flex-direction: column;
 		flex-direction: column;
 
+		@media screen and (max-width: 750px) {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
 		h4 {
 			font-size: 20px;
 			text-align: center;
@@ -29,6 +42,10 @@ section.login {
 
 		input{
 			margin-bottom: 20px;
+
+			@media screen and (max-width: 750px) {
+				height: 25px;
+			}
 		}
 
 		button {
