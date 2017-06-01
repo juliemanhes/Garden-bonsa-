@@ -1,0 +1,82 @@
+/**** PAGE PRODUIT SEUL *****/
+
+.minotaure {
+    a {
+        color: #000;
+        &:last-child {
+            font-style: italic;
+        }
+    }
+}
+
+.product-informations {
+    margin-top: 2%;
+    h3 {
+        font-size: 30px;
+        margin-bottom: 2%;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        margin: 2% 0;
+        font-style: italic;
+    }
+    .cta {
+        float: right;
+        background: $green;
+        color: #fff;
+        @media only screen and (min-width: $max-tab) {
+            &:hover {
+                background: #fff;
+                color: $green;
+            }
+        }
+    }
+    .price {
+        float: left;
+    }
+    p:last-child {
+        margin-top: 12%;
+        clear: both;
+        text-align: justify;
+        font-style: inherit;
+        @media only screen and (max-width: $max-tab) {
+            margin-top: 25%;
+            line-height: 25px;
+        }
+    }
+}
+
+section.product-details-icons {
+    margin-top: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    background: $section-bg;
+    padding: 5%;
+    @media only screen and (max-width: $max-tab) {
+        display: inherit;
+        margin-top: 5%;
+    }
+    p {
+        color: #fff;
+    }
+    div {
+        text-align: center;
+        padding-right: 7%;
+        @media only screen and (max-width: $max-tab) {
+            display: inherit;
+            margin-top: 5%;
+        }
+    }
+    div:last-child {
+        padding: 0;
+    }
+}
